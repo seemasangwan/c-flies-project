@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+int t;
+cin>>t;
+while(t>0)
+{
+    int n;
+    cin>>n;
+    int arr[3];
+    int k;
+    if(n%3==0)
+    {
+        k=n/3;
+        arr[0]=k;
+        arr[1]=k+1;
+        arr[2]=n-k-k-1;
+    }
+    else
+    { 
+       k=n/3+1;
+       arr[0]=k;
+       arr[1]=k+1;
+       arr[2]=n-k-k-1;
+       if(arr[2]==0)
+       {
+        k=n/3;
+        arr[0]=k;
+        arr[1]=k+2;
+        arr[2]=n-k-k-2;
+       }
+    }
+    for(int i=0;i<3;i++)
+    cout<<arr[i]<<" ";
+    t--;
+}
+return 0;
+}
