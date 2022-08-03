@@ -1,0 +1,90 @@
+//IGDTUW  TIME TABLE FOR IT1 FOR MARCH
+#include<iostream>
+using namespace std;
+int main()
+{
+    int day;
+    cout<<"enter the value of day betwwen 1 to 7"<<endl;
+    cin>>day;
+    switch(day)
+    {
+        case 1: 
+        {   cout<<"today is monday"<<endl;
+            int time1;
+            cout<<"what is time  "<<endl;
+            cin>>time1;
+
+            if(time1==10){cout<<"maths class time"<<endl;}
+            else if(time1==11||time1==12){cout<<"physics lab class time"<<endl;}  
+            else {cout<<"no class"<<endl;}     
+         } break;
+         case 2:
+         {  cout<<"today is tuesday"<<endl;
+             int time2;
+             cout<<"what is time"<<endl;
+             cin>>time2;
+             if(time2==9){cout<<"physics class time"<<endl;}
+             else if(time2==10){cout<<"maths class time"<<endl;}
+             else if(time2==11){cout<<"chemistry class time"<<endl;}
+             else if(time2==12){cout<<"lunch break"<<endl;}
+             else if(time2==1||time2==2||time2==3){cout<<"workshop class"<<endl;}
+             else {cout<<"no class"<<endl;}
+
+         } break;
+         case 3:
+         {   cout<<"today is wednesday"<<endl;
+             int time3;
+             cout<<"what is time "<<endl;
+             cin>>time3;
+             if(time3==11){cout<<"maths class time"<<endl;}
+             else if (time3==12){cout<<"chemistry class time"<<endl;}
+             else if(time3==1){cout<<"lunch break"<<endl;}
+             else if(time3==2||time3==3){cout<<"engineering class time"<<endl;}
+             else{cout<<"no class"<<endl;}
+            
+            
+         }break;
+         case 4:
+         {   cout<<"tiday is thursday"<<endl;
+             int time4;
+             cout<<"what is time"<<endl;
+             cin>>time4;
+             if(time4==9){cout<<"physics class time"<<endl;}
+             else if(time4==10){cout<<"maths class time"<<endl;}
+             else if(time4==11||time4==12){cout<<"chemistry lab class "<<endl;}
+             else if(time4==1){cout<<"lunch break"<<endl;}
+             else if(time4==2||time4==3){cout<<"EM LAB class"<<endl;}
+             else {cout<<"no class"<<endl;}
+         }break;
+         case 5:
+         {   cout<<"today is friday"<<endl;
+             int time5;
+             cout<<"what is time"<<endl;
+             cin>>time5;
+             if(time5==11){cout<<"EM class time"<<endl;}
+             else if(time5==12){cout<<"chemistry class time"<<endl;}
+             else if (time5==2){cout<<"physics class time"<<endl;}
+             else if(time5==3||time5==4){cout<<"communication skill"<<endl;}
+             else{cout<<"no class"<<endl;}
+
+         }break;
+         case 6:
+         {   cout<<"today is saturday"<<endl;
+             int time6;
+             cout<<"what is time"<<endl;
+             cin>>time6;
+             if(time6==12||time6==1){cout<<"communicarion skill"<<endl;}
+             else{cout<<"no class"<<endl;}
+         }break;
+         case 7:
+         {
+             cout<<"today is sunday"<<endl;
+             cout<<"no class"<<endl;
+         }break;
+         default:
+         {
+             cout<<"you enter wrong day"<<endl;
+         }
+    }
+    return 0;
+}
